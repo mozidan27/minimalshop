@@ -48,7 +48,9 @@ class WelcomePage extends StatelessWidget {
 
             MyButton(
               child: const Icon(Icons.arrow_forward),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/shop_page');
+              },
             ),
           ],
         ),
