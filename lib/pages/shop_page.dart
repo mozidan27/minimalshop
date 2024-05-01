@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/widgets/my_drawer.dart';
+import 'package:minimalshop/widgets/my_drawer.dart';
 
 class ShopPage extends StatelessWidget {
   const ShopPage({super.key});

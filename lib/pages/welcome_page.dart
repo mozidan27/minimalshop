@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/widgets/my_buttton.dart';
+import 'package:minimalshop/widgets/my_buttton.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/widgets/my_tile.dart';
+import 'package:minimalshop/widgets/my_tile.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
