@@ -36,7 +36,7 @@ class WelcomePage extends StatelessWidget {
 
             // subtitle
             Text(
-              'Made with love using flutter',
+              'Made With ♡ Using Flutter',
               style: TextStyle(
                   color: Theme.of(context).colorScheme.inversePrimary,
                   fontSize: 18),
