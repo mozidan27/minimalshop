@@ -5,30 +5,32 @@ class Shop extends ChangeNotifier {
   // products for sale
   final List<Product> _shop = [
     Product(
-      name: 'product 1',
-      price: '233',
-      description: 'new product ',
-    ),
+        name: 'Mesh Sport Cap',
+        price: '238',
+        description:
+            "Baseball Cap Polo Style Classic Sports Casual Plain Sun Hat",
+        imagePath: 'assets/ob.png'),
     Product(
-      name: 'product 2',
-      price: '233',
-      description: 'new product ',
-    ),
+        name: 'CaBaseball & Snapback',
+        price: '890',
+        description: 'New York NY Baseball & Snapback Hat For Unisex',
+        imagePath: 'assets/cap.webp'),
     Product(
-      name: 'product 3',
-      price: '233',
-      description: 'new product ',
-    ),
+        name: 'Iphone 13 Cover',
+        price: '1209',
+        description:
+            'Perfect Fit : New design iphone 13 clear case with built in Camera Lens Protector compatible for Iphone 13',
+        imagePath: 'assets/cover.png'),
     Product(
-      name: 'product 4',
-      price: '233',
-      description: 'new product ',
-    ),
+        name: 'Miza Hoodie',
+        price: '1507',
+        description: 'Miza Hoodie With Side Pockets',
+        imagePath: 'assets/hoodie2.png'),
     Product(
-      name: 'product 5',
-      price: '233',
-      description: 'new product ',
-    ),
+        name: 'Men Sneaker',
+        price: '2780',
+        description: 'Breathable helps absorb moisture from the foot',
+        imagePath: 'assets/shoe.jpg'),
   ];
 
   // user cart
