@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:minimalshop/models/product.dart';
 import 'package:minimalshop/models/shop.dart';
+import 'package:minimalshop/widgets/my_buttton.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
@@ -34,6 +34,17 @@ class CartPage extends StatelessWidget {
       ),
     );
   }
+  // user pressed to pay
+
+  void payButtonPressed(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => const AlertDialog(
+        content:
+            Text('User wants to pay! connect this app to your payment backend'),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +67,7 @@ class CartPage extends StatelessWidget {
             child: cart.isEmpty
                 ? Center(
                     child: Text(
-                      "Your Cart Is Empty",
+                      "Your Cart Is Empty...",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Theme.of(context).colorScheme.inversePrimary,
@@ -115,6 +126,13 @@ class CartPage extends StatelessWidget {
                     },
                   ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 24),
+            child: MyButton(
+              onTap: () => payButtonPressed(context),
+              child: const Text("Pay Now"),
+            ),
+          )
         ],
       ),
     );
